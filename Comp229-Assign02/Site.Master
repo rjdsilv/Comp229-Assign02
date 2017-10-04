@@ -63,7 +63,7 @@
             </asp:ContentPlaceHolder>
             <footer>
                 <div class="container">
-                    <p>&copy; <%: DateTime.Now.Year %> - .Me Survey Application</p>
+                    <p>&copy; <%: DateTime.Now.Year %> - Me Survey Application: Create by Rodrigo Januario da Silva</p>
                 </div>
             </footer>
         </div>

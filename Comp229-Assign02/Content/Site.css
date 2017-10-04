@@ -47,7 +47,7 @@ textarea {
 }
 
 .brand-logo-small {
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 4px;
     font-size: 14px;
     padding: 3px;
@@ -56,15 +56,27 @@ textarea {
 
 /* Setting the page content properties */
 .body-column {
-    margin: 20px 0;
-    border: 1px solid #d5d5d5;
+    margin: 40px 0;
     border-radius: 10px;
     font-family: Calibri;
+    background-color: rgb(30, 50, 130);
+    color: white;
+    box-shadow: 6px 7px 10px #777;
 }
 
 .body-column > hr {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.body-column  a {
+    color: white;
+    text-decoration: underline;
+}
+
+.body-column  a:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 /* Setting up the column header properties. */
