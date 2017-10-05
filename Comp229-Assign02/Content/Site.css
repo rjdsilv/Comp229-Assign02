@@ -8,8 +8,17 @@ body {
 footer {
     background-color: #555555;
     color: white;
-    padding: 10px 0 1px 0px;
+    padding: 10px 0 1px 0;
     font-size: 12px;
+}
+
+/* Setting the label properties */
+label {
+    margin-left: 7px;
+    font-family: Calibri;
+    font-size: 17px;
+    font-weight: 500;
+    color: #505050;
 }
 
 /* Wrapping element */
@@ -18,14 +27,6 @@ footer {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -36,6 +37,10 @@ textarea {
     .body-content {
         padding: 0;
     }
+}
+
+.navbar-inverse {
+    box-shadow: -5px 5px 5px #757575;
 }
 
 .brand-logo > a {
@@ -50,6 +55,14 @@ textarea {
     border: 2px solid white;
     border-radius: 4px;
     font-size: 14px;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.brand-logo-survey {
+    border: 2px solid #505050;
+    border-radius: 4px;
+    font-size: 20px;
     padding: 3px;
     font-weight: bold;
 }
@@ -90,4 +103,96 @@ textarea {
 .body-column-content {
     font-size: 18px;
     text-align: justify;
+}
+
+/* Setting the jumbotrom look and feel */
+.jumbotron {
+    font-family: Calibri;
+    font-weight: 900;
+    text-align: center;
+    background-color: rgb(30, 50, 130);
+    color: white;
+}
+
+/* Setting up the properties from survey panel and its components */
+.survey-panel,
+.survey-subpanel {
+    background-color: #eee;
+    border-radius: 7px;
+    box-shadow: 7px 7px 7px #757575;
+    padding: 20px;
+    margin: 30px auto;
+    font-family: Calibri;
+    overflow: auto;
+}
+
+.survey-panel-title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #505050;
+}
+
+.survey-input {
+    padding: 10px;
+    border: 2px solid rgb(30, 50, 130);
+    border-radius: 5px;
+    background-color: rgb(210, 240, 250);
+    width: 100%;
+    margin-top: 15px;
+    color: rgb(30, 50, 130);
+    font-family: Calibri;
+    font-size: 18px;
+}
+
+::placeholder {
+    color: rgb(30, 50, 130);
+    opacity: 0.40;
+    font-family: Calibri;
+    font-size: 18px;
+}
+
+.survey-question {
+    font-family: Calibri;
+    font-size: 20px;
+    color: #505050;
+    margin: 25px 0 15px 0;
+}
+
+.survey-answer {
+    overflow: auto;
+}
+
+.survey-error-message {
+    font-family: Calibri;
+    font-size: 14px;
+    color: red;
+}
+
+.survey-submit-panel {
+    padding: 0;
+    margin: -20px 0 50px 0;
+    text-align: center;
+}
+
+.survey-submit {
+    padding: 7px 20px 7px 20px;
+    border: 2px solid rgb(30, 50, 130);
+    border-radius: 5px;
+    background-color: rgb(30, 50, 130);
+    color: white;
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 7px 2px #a5a5a5;
+}
+
+/* Button pressed animation. */
+.survey-submit:hover {
+    background-color: rgb(25, 15, 100);
+}
+
+.survey-submit:active {
+    background-color: rgb(25, 15, 100);
+    box-shadow: 0 3px 2px #555555;
+    transform: translateY(4px);
 }

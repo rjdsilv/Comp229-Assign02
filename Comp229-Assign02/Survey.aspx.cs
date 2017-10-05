@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Comp229_Assign02
 {
@@ -11,7 +7,20 @@ namespace Comp229_Assign02
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Page.Title = "Satisfaction Survey";
+            FirstNameTextBox.Focus();
+            BirthDateTextBox_RangeValidator.MaximumValue = DateManipulator.MaxBirthDate();
+        }
 
+        protected void SubmitSurveyButton_Click(object sender, EventArgs e)
+        {
+            Session["FirstName"] = FirstNameTextBox.Text;
+            Session["LastName"] = LastNameTextBox.Text;
+            Session["BirthDate"] = BirthDateTextBox.Text;
+            Session["Province"] = ProvinceDropDown.SelectedValue;
+            Session["City"] = CityTextBox.Text;
+            Session["PhoneNumber"] = PhoneNumberTextBox.Text;
+            Session["Email"] = EmailTextBox.Text;
         }
     }
 }

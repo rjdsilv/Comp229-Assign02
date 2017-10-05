@@ -5,7 +5,7 @@ namespace Comp229_Assign02
 {
     public partial class Home : Page
     {
-        protected override void OnLoad(EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
             Page.Title = "Home Page";
         }
