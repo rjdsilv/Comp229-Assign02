@@ -55,6 +55,10 @@
                 <span><b>Your commens:</b> <%=Session["Comments"] %></span>
             </div>
             <% } %>
+            <br /><br />
+            <div class="col-xs-11 survey-answer">
+                <span>To leave the survey, please click <a href="http://www.microsoft.com">HERE</a></span>
+            </div>
         </asp:Panel>
     </div>
 </asp:Content>

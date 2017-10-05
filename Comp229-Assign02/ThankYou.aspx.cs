@@ -15,11 +15,14 @@ namespace Comp229_Assign02
                 Response.Redirect("~/Home");
             }
 
-            // Clearing the session so the values are not re-used.
-            Session.Clear();
-
             // Setting up the survey filling status.
             Session["SurveyFilled"] = "N";
+        }
+
+        protected void Page_Unload(object sender, EventArgs e)
+        {
+            // Clearing the session so the values are not re-used.
+            Session.Clear();
         }
 
         protected string FormatPhoneNumber()
