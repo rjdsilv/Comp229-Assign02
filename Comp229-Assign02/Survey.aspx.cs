@@ -22,6 +22,10 @@ namespace Comp229_Assign02
             Session["City"] = CityTextBox.Text;
             Session["PhoneNumber"] = PhoneNumberTextBox.Text;
             Session["Email"] = EmailTextBox.Text;
+            Session["MostLikedService"] = GetMostLikedService();
+            Session["MostWishedService"] = GetMostWishedService();
+            Session["RecommendationLevel"] = RecommendationLevelDropDown.SelectedValue;
+            Session["Comments"] = CommentTextBox.Text;
         }
 
         /*
@@ -38,6 +42,42 @@ namespace Comp229_Assign02
         protected void ValidateServiceMostWishedSelected(object o, ServerValidateEventArgs e)
         {
             e.IsValid = PetMeRadioButton.Checked || RestaurantMeRadiioButton.Checked || LanguageMeRadioButton.Checked;
+        }
+
+        /*
+         * Returns the selected most liked service.
+         */
+        string GetMostLikedService()
+        {
+            // Getting the radio button values.
+            if (ClinicMeRadioButton.Checked)
+            {
+                return "Clinic.Me";
+            }
+            else if (GymMeRadioButton.Checked)
+            {
+                return "Gym.Me";
+            }
+
+            return "BandMeRadioButton.Me";
+        }
+
+        /*
+         * Returns the selected most wished service.
+         */
+        string GetMostWishedService()
+        {
+            // Getting the radio button values.
+            if (PetMeRadioButton.Checked)
+            {
+                return "Pet.Me";
+            }
+            else if (RestaurantMeRadiioButton.Checked)
+            {
+                return "Restaurante.Me";
+            }
+
+            return "Language.Me";
         }
     }
 }

@@ -98,12 +98,12 @@
             </div>
             <div class="col-xs-12 survey-answer">
                 <div class="col-xs-6">
-                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="survey-input" TabIndex="14">
-                    <asp:ListItem Text="Totally" Value="5" Selected="True" />
-                    <asp:ListItem Text="Very Likely" Value="4" />
-                    <asp:ListItem Text="Maybe" Value="3" />
-                    <asp:ListItem Text="Not Likely" Value="2" />
-                    <asp:ListItem Text="Never" Value="1" />
+                <asp:DropDownList ID="RecommendationLevelDropDown" runat="server" CssClass="survey-input" TabIndex="14">
+                    <asp:ListItem Text="Totally" Value="Totally" Selected="True" />
+                    <asp:ListItem Text="Very Likely" Value="Very Likely" />
+                    <asp:ListItem Text="Maybe" Value="Maybe" />
+                    <asp:ListItem Text="Not Likely" Value="Not Likely" />
+                    <asp:ListItem Text="Never" Value="Never" />
                 </asp:DropDownList>
                 </div>
             </div>
