@@ -28,6 +28,9 @@ namespace Comp229_Assign02
             Session["RecommendationLevel"] = RecommendationLevelDropDown.SelectedValue;
             Session["Comments"] = CommentTextBox.Text;
 
+            // Filling that the survey was just answered.
+            Session["SurveyFilled"] = "Y";
+
             // Redirecting the user to the Thank You page.
             Response.Redirect("~/ThankYou");
         }

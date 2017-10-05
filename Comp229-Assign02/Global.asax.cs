@@ -17,5 +17,10 @@ namespace Comp229_Assign02
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        void Session_Start(object sender, EventArgs e)
+        {
+            Session["SurveyFilled"] = "N";
+        }
     }
 }
