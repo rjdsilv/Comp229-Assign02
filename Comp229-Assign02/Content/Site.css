@@ -115,8 +115,7 @@ label {
 }
 
 /* Setting up the properties from survey panel and its components */
-.survey-panel,
-.survey-subpanel {
+.survey-panel {
     background-color: #eee;
     border-radius: 7px;
     box-shadow: 7px 7px 7px #757575;
@@ -128,6 +127,12 @@ label {
 
 .survey-panel-title {
     font-size: 30px;
+    font-weight: 900;
+    color: #505050;
+}
+
+.survey-answer-title {
+    font-size: 24px;
     font-weight: 900;
     color: #505050;
 }
@@ -159,6 +164,10 @@ label {
 }
 
 .survey-answer {
+    font-family: Calibri;
+    font-size: 18px;
+    color: #505050;
+    margin: 15px 0 15px 0;
     overflow: auto;
 }
 

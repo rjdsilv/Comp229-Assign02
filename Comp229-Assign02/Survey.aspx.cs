@@ -10,11 +10,12 @@ namespace Comp229_Assign02
         {
             Page.Title = "Satisfaction Survey";
             FirstNameTextBox.Focus();
-            BirthDateTextBox_RangeValidator.MaximumValue = DateManipulator.MaxBirthDate();
+            BirthDateTextBox_RangeValidator.MaximumValue = UtilsHelper.MaxBirthDate();
         }
 
         protected void SubmitSurveyButton_Click(object sender, EventArgs e)
         {
+            // Getting the values into the session.
             Session["FirstName"] = FirstNameTextBox.Text;
             Session["LastName"] = LastNameTextBox.Text;
             Session["BirthDate"] = BirthDateTextBox.Text;
@@ -26,6 +27,9 @@ namespace Comp229_Assign02
             Session["MostWishedService"] = GetMostWishedService();
             Session["RecommendationLevel"] = RecommendationLevelDropDown.SelectedValue;
             Session["Comments"] = CommentTextBox.Text;
+
+            // Redirecting the user to the Thank You page.
+            Response.Redirect("~/ThankYou");
         }
 
         /*
@@ -59,7 +63,7 @@ namespace Comp229_Assign02
                 return "Gym.Me";
             }
 
-            return "BandMeRadioButton.Me";
+            return "Band.Me";
         }
 
         /*
