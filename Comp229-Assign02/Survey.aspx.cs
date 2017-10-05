@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace Comp229_Assign02
 {
@@ -21,6 +22,22 @@ namespace Comp229_Assign02
             Session["City"] = CityTextBox.Text;
             Session["PhoneNumber"] = PhoneNumberTextBox.Text;
             Session["Email"] = EmailTextBox.Text;
+        }
+
+        /*
+         * Validates the most liked service selection.
+         */
+        protected void ValidateServiceMostLikedSelected(object o, ServerValidateEventArgs e)
+        {
+            e.IsValid = ClinicMeRadioButton.Checked || GymMeRadioButton.Checked || BandMeRadioButton.Checked;
+        }
+
+        /*
+         * Validates the most wished service selection.
+         */
+        protected void ValidateServiceMostWishedSelected(object o, ServerValidateEventArgs e)
+        {
+            e.IsValid = PetMeRadioButton.Checked || RestaurantMeRadiioButton.Checked || LanguageMeRadioButton.Checked;
         }
     }
 }

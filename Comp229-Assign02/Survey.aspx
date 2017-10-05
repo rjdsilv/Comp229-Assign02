@@ -60,7 +60,7 @@
 
             <!-- Question 1 -->
             <div class="col-xs-12 survey-question">
-                <span><b>1.</b> What is the <span class="brand-logo-survey">Me</span> service you like the most?</span>
+                <span><b>1.</b> What is the <span class="brand-logo-survey">Me</span> service you like the most?</span><span class="survey-required">(Required)</span>
             </div>
             <div class="col-xs-12 survey-answer">
                 <div class="col-xs-4">
@@ -73,10 +73,11 @@
                     <asp:RadioButton ID="BandMeRadioButton" Text="Band.Me" GroupName="CurrentServicesGroup" runat="server" TabIndex="10" />
                 </div>
             </div>
+            <asp:CustomValidator ID="ServiceMostLiked_CustomValidator" OnServerValidate="ValidateServiceMostLikedSelected" ErrorMessage="Please, select one of the available options for the most liked service." Display="Dynamic" runat="server" CssClass="survey-error-message" />
 
             <!-- Question 2 -->
             <div class="col-xs-12 survey-question">
-                <span><b>2.</b> What is the <span class="brand-logo-survey">Me</span> service you wish to have next?</span>
+                <span><b>2.</b> What is the <span class="brand-logo-survey">Me</span> service you wish to have next?</span><span class="survey-required">(Required)</span>
             </div>
             <div class="col-xs-12 survey-answer">
                 <div class="col-xs-4">
@@ -89,10 +90,11 @@
                     <asp:RadioButton ID="LanguageMeRadioButton" Text="Language.Me" GroupName="FutureServicesGroup" ToolTip="Find a language school to improve your skills" runat="server" TabIndex="13" />
                 </div>
             </div>
+            <asp:CustomValidator ID="ServiceMostWished_CustomValidator" OnServerValidate="ValidateServiceMostWishedSelected" ErrorMessage="Please, select one of the available options for the most wished service." Display="Dynamic" runat="server" CssClass="survey-error-message" />
 
             <!-- Question 3 -->
             <div class="col-xs-12 survey-question">
-                <span><b>3.</b> How likely would you recommend <span class="brand-logo-survey">Me</span> services for a friend?</span>
+                <span><b>3.</b> How likely would you recommend <span class="brand-logo-survey">Me</span> services for a friend?</span><span class="survey-required">(Required)</span>
             </div>
             <div class="col-xs-12 survey-answer">
                 <div class="col-xs-6">

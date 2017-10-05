@@ -196,3 +196,11 @@ label {
     box-shadow: 0 3px 2px #555555;
     transform: translateY(4px);
 }
+
+
+/* Displays the required text on the questions in a ligther font */
+.survey-required {
+    color: #a5a5a5;
+    margin-left: 15px;
+    font-weight: 100;
+}

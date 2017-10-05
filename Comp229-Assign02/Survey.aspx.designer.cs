@@ -193,6 +193,15 @@ namespace Comp229_Assign02 {
         protected global::System.Web.UI.WebControls.RadioButton BandMeRadioButton;
         
         /// <summary>
+        /// ServiceMostLiked_CustomValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator ServiceMostLiked_CustomValidator;
+        
+        /// <summary>
         /// PetMeRadioButton control.
         /// </summary>
         /// <remarks>
@@ -218,6 +227,15 @@ namespace Comp229_Assign02 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton LanguageMeRadioButton;
+        
+        /// <summary>
+        /// ServiceMostWished_CustomValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator ServiceMostWished_CustomValidator;
         
         /// <summary>
         /// DropDownList1 control.
